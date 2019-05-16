@@ -1,0 +1,308 @@
+@import './_font.scss';
+@import './mixin/_responsive.scss';
+@import './_grid';
+@import './base/_color.scss';
+@import './_button.scss';
+@import './_input-search';
+
+.title-bar {
+    height: 65px;
+    background: #f0f0f0;
+    position: fixed;
+    z-index: 1020;
+    padding-top: 16px;
+
+    @include respond-to('small') {
+        width: 100%;
+        /*height: 100px;*/
+    }
+
+    @include respond-to('medium') {
+        width: calc(100% - 65px);
+    }
+
+    h3 {
+        margin: 0;
+        display: inline-block;
+        font-size: 2.8rem;
+
+        // @include respond-to('small') {
+        //     padding-top: 13px;
+        //     margin-left: 10px;
+        // }
+
+        // @include respond-to('medium') {
+        //     padding-top: 4px;
+        //     margin-left: 10px;
+        // }
+        a{
+            color : $black;
+        }
+        a:focus{
+            color : $black;
+        }
+        a:hover{
+            color : $black;
+        }
+
+        .text-title {
+            color: $red;
+
+                @include respond-to('small') {
+                   font-size: 2.4rem;
+                }
+
+        }
+    }
+
+    .input-search {
+        margin-right: 15px;
+
+         @include respond-to('small') {
+            width: 178px;
+        }
+    }
+
+}
+
+/////////////////////////////
+
+
+.title-bar-back {
+    @extend .title-bar;
+
+    .icon-back {
+        color: $black;
+    }
+
+    .text-title {
+        padding-left: 10px;
+        color: $red;
+
+        @include respond-to('small') {
+            font-size: 2.4rem;
+        }
+
+        i {
+            font-size: 22px;
+
+            @include respond-to('small') {
+                font-size: 18px;
+            }
+        }
+
+        img {
+            width: 25px;
+
+            @include respond-to('small') {
+                width: 18px;
+            }
+        }
+    }
+}
+
+.titlebar-btn-group {
+    .mdc-button {
+        margin-left: 10px;
+        padding: 0px 5px;
+
+         @include respond-to('mobile') {
+            margin-left: 0px;
+        }
+    }
+}
+
+.text-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+//////////////
+
+.title-bar-total {
+
+    @extend .title-bar-back;
+
+    .box-total {
+        @include respond-to('small') {
+            margin-top: -8px;
+        }
+    }
+
+    .text-grand-total {
+        color: black;
+        text-align: right;
+        white-space: pre-line;
+        display: -webkit-inline-box;
+        margin-top: -22px;
+
+        @include respond-to('small') {
+            position: absolute;
+            top: 0;
+            display: inline-flex;
+            right: 0;
+            font-size: 20px;
+        }
+    }
+
+    .text-grand-total-amount {
+        float: right;
+        text-align: right;
+        margin-right: 0px;
+        margin-left: 15px;
+        margin-top: 0px;
+        color: #2f92c2;
+
+        @include respond-to('small') {
+            font-size: 1.7em;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .box-btn {
+        display: unset;
+
+        @include respond-to('small') {
+            margin-right: 60px;
+        }
+    }
+
+    .box-padding {
+        padding-left: 10px;
+    }
+}
+
+.title-bar-action {
+    @extend .title-bar-total;
+    padding-top: 13px;
+
+    @include respond-to('small') {
+        padding-top: 10px;
+    }
+
+    .box-total {
+        @include respond-to('small') {
+            margin-top: 0px;
+        }
+    }
+
+    .mdc-button {
+        margin: 0 5px;
+        min-width: 90px;
+        height: 35px;
+    }
+
+    .box-btn {
+        display: unset;
+
+        @include respond-to('small') {
+            margin-right: 60px;
+        }
+    }
+
+    .text-grand-total {
+        margin-left: 25px;
+    }
+
+    .label-status {
+        @extend .status-word;
+        font-size: 24px;
+    }
+
+    .box-padding {
+        padding-left: 10px;
+    }
+}
+
+.status-badge {
+    margin: 0px;
+    display: inline-block;
+}
+
+.lost {
+    @extend .status-badge;
+    background-color: rgb(255, 0, 0);
+}
+
+.win {
+    @extend .status-badge;
+    background-color: #8abb3d;
+}
+
+.status-word {
+    border-radius: 30px !important;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 2px;
+    pointer-events: none;
+    padding: 0 16px !important;
+    text-transform: uppercase;
+}
+
+.title-bar-dashboard {
+    @extend .title-bar;
+
+     .text-title {
+        @include respond-to('medium') {
+            padding-left: 10px;
+        }
+     }
+
+     .text-range {
+        display: inline;
+        padding-left: 20px;
+        font-style: italic;
+    }
+
+
+}
+
+
+
+
+
+.topNav {
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.topNav {
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.topNav .btn-group > .active {
+    background: #e8e8e8;
+}
+
+.btn-titlebar-group, .text-amount {
+    text-align: right;
+}
+
+.text-amount {
+    float: right;
+    color: #000;
+    padding-right: 20px;
+    margin-top: -25px;
+    padding-left: 20px;
+    white-space: pre;
+}
+
+
+.estimated-amount {
+    float: right;
+    text-align: right;
+    margin-right: 0;
+    margin-top: 0px;
+    color: #f66e24;
+}
+
+.btn-titlebar-detail {
+    display: inline-block;
+    margin: 0 5px !important;
+}

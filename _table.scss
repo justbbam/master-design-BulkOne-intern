@@ -1,0 +1,21 @@
+@import './base/_color.scss';
+@import './_font.scss';
+@import './_grid.scss';
+
+tbody,thead,th{
+    font-size: 16px !important;
+    font-weight: normal;
+    vertical-align: middle !important;
+}
+
+.detail{
+    color: $smoke;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+td{
+    padding-top: 10px;
+    color: #585858;
+
+}

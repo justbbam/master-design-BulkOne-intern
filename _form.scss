@@ -1,0 +1,26 @@
+@import './base/_color.scss';
+@import './_font.scss';
+
+input{
+    &::placeholder{
+    color: $smoke;
+    font-weight: lighter;
+    font-size: 14px;
+    }
+}
+
+input[type=text]{
+    border: 1px  solid #ccc;
+    &:focus{
+        border: 1px  solid #ccc;
+        box-shadow: 0 0 0px;
+    }
+}
+
+.form-control{
+    font-size: 14px;
+    color: $smoke;
+    font-weight: lighter;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 0px;
+}

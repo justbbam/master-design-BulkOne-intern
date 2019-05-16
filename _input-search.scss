@@ -1,0 +1,14 @@
+.input-search {
+    font-size: 12px;
+    padding: 5px 15px;
+    width: 270px;
+    height: 32px;
+    margin: 0;
+    float: left;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+
+    @include respond-to('mobile') {
+        width: 220px;
+    }
+}

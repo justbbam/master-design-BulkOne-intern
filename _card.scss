@@ -1,0 +1,13 @@
+@import './base/_color.scss';
+@import './_font.scss';
+@import './mixin/_responsive.scss';
+
+.card-body-custom {
+    padding: 8px 20px 8px 8px;
+    border : 1px solid $dark-gray;
+    border-style: none solid solid solid;
+    .row{
+        align-items: center;
+        justify-content: center;
+    }
+}

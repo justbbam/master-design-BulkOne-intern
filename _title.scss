@@ -1,0 +1,11 @@
+@import './_color.scss';
+@import './_font.scss';
+@import './_grid.scss';
+
+.header-content {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+

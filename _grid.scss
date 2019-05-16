@@ -1,0 +1,37 @@
+@import './base/_color.scss';
+@import './mixin/_responsive';
+
+:host /deep/ code {
+  color: $black;
+}
+
+%width-menu {
+  @include respond-to('max-small') {
+    width: 100%;
+  }
+  @include respond-to('medium') {
+    width: calc(100% - 65px);
+  }
+}
+  .grid-container {
+    //margin-left: 65px;
+    // margin-top: 45px;
+    float: right; // background: $body-color-gray;
+    background-color: white;
+    min-height: 100%;
+    margin-top: 45px;
+    height: 100vh;
+    @extend %width-menu;
+  }
+
+
+.grid-content {
+  margin-left: 45px;
+  margin-right: 40px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+  @include respond-to("max-small") {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,17 @@
+@import './base/_color.scss';
+@import './_font.scss';
+
+.quotation-box{
+    padding: 8px 14px;
+    border: 1px solid $dark-gray;
+    i{
+        vertical-align: middle;
+    }
+}
+
+.quotation-create-box{
+    padding: 26px 4px;
+    border: 2px dashed $dark-gray;
+    text-align: center;
+    vertical-align: middle;
+}

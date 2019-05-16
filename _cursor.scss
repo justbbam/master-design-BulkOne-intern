@@ -1,0 +1,23 @@
+.cursor{
+  &-pointer{
+    cursor: pointer;
+  }
+  &-default{
+    cursor: default;
+  }
+  &-not-allowed{
+    cursor: not-allowed;
+  }
+  &-grabbable {
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+
+      :active { 
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+    }
+  }
+}

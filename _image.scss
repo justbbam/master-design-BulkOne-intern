@@ -1,0 +1,42 @@
+.img-circle{
+  border-radius: 50%;
+  background: #ffffff;
+  overflow: hidden;
+  &-ex-sm{
+    height: 30px;
+    width: 30px;
+  }
+  &-sm{
+    height: 40px;
+    width: 40px;
+  }
+  &-lg {
+    height: 120px;
+    width: 120px;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+.img{
+  &-ex-sm{
+    width: 30px;
+  }
+  &-sm{
+    width: 40px;
+  }
+  &-lg {
+    width: 120px;
+  }
+  
+  img {
+    height: 100%;
+  }
+}
+
+.img-dollar{
+  position: absolute;
+  margin-left: -24px;
+}

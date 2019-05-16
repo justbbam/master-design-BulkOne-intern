@@ -1,0 +1,25 @@
+@import "./base/_color";
+@import "./_font";
+@import "./_grid";
+
+.footer {
+  font-size: 1rem;
+  background-color: $black;
+  text-align: center;
+  color: $white;
+  bottom: 0;
+  height: 24px;
+  width: 100%;
+  position: fixed;
+  z-index: 1037; // font-family: 'eausans_book';
+}
+
+// SUB FOOTER
+.sub-footer {
+  position: fixed;
+  z-index: 1037;
+  height: 87px;
+  background: $border;
+  @extend %width-menu;
+  bottom:0;
+}

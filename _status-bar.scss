@@ -1,0 +1,101 @@
+.status-bar {
+    margin-top: 40px;
+    padding: 0 0 10px;
+}
+
+.status-bar-progress {
+    position: relative;
+    height: 10px;
+    left: 50%;
+    width: 100%;
+
+}
+ /*box-shadow: 1px 1px 5px #888;*/
+.status-bar-progress-last {
+    position: relative;
+    height: 10px;
+    width: 110%;
+    right: 65%;
+
+    @include respond-to('mobile') {
+        right: 70% !important;
+    }
+}
+
+.progress {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #b7b7b7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+    border: 3px solid rgb(242, 240, 241);
+}
+
+.status-icon {
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #b6e154;
+    top: 5px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #888;
+    border: 3px solid rgb(242, 240, 241);
+}
+
+.status-icon-revise {
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: rgb(253, 174, 19);
+    top: 5px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #888;
+    border: 3px solid rgb(242, 240, 241);
+}
+
+.status-font-awesome {
+    position: relative;
+    z-index: 10;
+    margin: 5px;
+    color: white;
+}
+
+.status-text {
+    color: #999;
+}
+
+.detail-horizontal-line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 45px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.status-badge {
+    margin: 0px;
+    display: inline-block;
+}

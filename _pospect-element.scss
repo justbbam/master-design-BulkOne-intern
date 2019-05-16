@@ -1,0 +1,128 @@
+@import './_grid.scss';
+@import './_font.scss';
+@import './_button.scss';
+
+.select-ignore-div {
+    margin-top: 10px;
+}
+
+.select-ignore-grey {
+    font-size: 18px;
+    color: #a5a5a5;
+}
+
+.select-ignore-black {
+    font-size: 18px;
+    color: #000000;
+}
+
+.tree-div {
+    margin-top: -15px;
+    background-color: #f6f6f6;
+    
+}
+
+.tree-box {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #898989;
+    float: left !important;
+    height: 70px !important;
+    padding: 0 10px;
+    border-right: 1px solid #e2e2e2;
+}
+
+.tree-image {
+    width: 45px;
+    height: 54px;
+    
+}
+
+.image-not-select {
+    filter: contrast(0);
+}
+
+.tree-image-box {
+    padding-left: 5px;
+    padding-top: 3px;
+    float: left;
+}
+
+.tree-text-div {
+    padding-right: 10px;
+    float: left;
+}
+
+.tree-number-text {
+    font-weight: bold;
+    margin: 0px;
+    text-align: right;
+    line-height: 4px;
+    font-size: 20px;
+    
+}
+
+.tree-content-text {
+    text-align: right;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.select-tree {
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-bottom: 5px solid #ffeb3b;
+    box-shadow: -1px 5px 10px #b3b3b3;
+    color: black;
+    &:after {
+        right: 1px;
+        width: 0;
+        height: 0;
+        border-top: 17px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-left: 20px solid $red;
+        z-index: 2;
+        margin-top: -47px;
+
+        border-color: #007bff0e transparent transparent transparent;       
+
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        text-shadow: none;
+        width: 18px;
+        height: 18px;
+        right: 78px;
+        top: 68px;
+        border-style: solid;
+        border-width: 10px 10px 0px 9px;
+        border-color: #ffeb3b transparent transparent transparent;
+    }
+
+}
+
+.search-box-mobile{
+    @include respond-to('small') {
+        float: right;
+    }
+}
+
+.padding-page {
+    padding-left: 30px;
+}
+
+.first-tree-box {
+    margin-right: -120px;
+}
+
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0px 9px;
+    border-color: #ffeb3b transparent transparent transparent;
+}

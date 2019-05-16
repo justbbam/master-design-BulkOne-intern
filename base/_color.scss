@@ -1,0 +1,103 @@
+﻿$white: #FFFFFF;
+
+$gray: #F0F0F0;
+
+$dark-gray: #D8D8D8;
+
+$smoke: #818286;
+
+$dark: #3b3e43;
+
+$black: #000000;
+
+$yellow: #ffeb3e;
+$dark-yellow: #e0ce36;
+
+$orange: #FF8E38;
+
+$red: #ec3138;
+
+$pink: #F2DEDE;
+
+$green: #8ABB3D;
+
+$sky: #E1F4FE;
+
+$blue: #2A88D9;
+
+$tiffany: #6CD3B5;
+
+$border: #ddd;
+
+.bg{
+    &l{
+        filter: brightness(1.2);
+        -webkit-filter: brightness(1.2);
+        -moz-filter: brightness(1.2);
+        -o-filter: brightness(1.2);
+        -ms-filter: brightness(1.2);
+    }
+    &d{
+        filter: brightness(0.9);
+        -webkit-filter: brightness(0.9);
+        -moz-filter: brightness(0.9);
+        -o-filter: brightness(0.9);
+        -ms-filter: brightness(0.9);
+    }
+}
+
+.bg-white{
+    background-color: $white;
+}
+
+.bg-gray{
+    background-color: $gray;
+}
+
+.bg-smoke{
+    background-color: $smoke;
+}
+
+.bg-dark{
+    background-color: $dark;
+}
+
+.bg-black{
+    background-color: $black;
+}
+
+.bg-yellow{
+    background-color: $yellow;
+}
+
+.bg-dark-yellow{
+    background-color: $dark-yellow;
+}
+
+.bg-orange{
+    background-color: $orange;
+}
+
+.bg-red{
+    background-color: $red;
+}
+
+.bg-pink{
+    background-color: $pink;
+}
+
+.bg-green{
+    background-color: $green;
+}
+
+.bg-sky{
+    background-color: $sky;
+}
+
+.bg-tiffany{
+    background-color: $tiffany;
+}
+
+.bg-blue{
+    background-color: $blue;
+}

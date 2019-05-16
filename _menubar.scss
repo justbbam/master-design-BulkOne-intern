@@ -1,0 +1,146 @@
+/*----//////////////////////////////////////// LEFT MENU BAR //////////////////////////////////---*/
+@import './base/_color.scss';
+@import './_font.scss';
+@import './_grid.scss';
+// @import './_variable.scss';
+@import './mixin/_responsive.scss';
+@import './_header.scss';
+@import './_nav.scss';
+
+// @mixin position-fixed($top,$bottom: 0) {
+//     position: fixed;
+//     top: $top;
+//     bottom: $bottom;
+// }
+
+
+.mainNav {
+    /*overflow-y scrollbar*/
+
+    // position: fixed;
+    top: 45px;
+    list-style: none;
+    text-align: center;
+    // z-index: 1030;
+    margin: 0;
+    bottom: 0;
+    /* end overflow-y scrollbar*/
+    // z-index: 1030;
+    margin: 0;
+    // background: $navbar-bg;
+    width: 65px;
+    // @include position-fixed(45px);
+
+    // @include respond-to('small') {
+    //     display: none;
+    // }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+
+        li {
+            height: 65px;
+            // z-index: 1;
+            box-shadow: inset 6px 0 0 rgba(0,0,0,.12);
+            border-bottom: 1px solid #6b6261;
+            outline: none;
+            /*overflow-y scrollbar*/
+            background: #3b3e43;
+            width: 65px !important;
+            /* endoverflow-y scrollbar*/
+            &:hover {
+                cursor: pointer;
+                // background: $navbar-bg-hover;
+                filter: brightness(90%);
+            }
+
+            &:active, &.active {
+                background: #3b3e43;
+                color: #ffeb3b;
+                box-shadow: inset 6px 0 0 #ffeb3b;
+
+                a {
+                    color: black;
+                }
+
+                &::before, &::after {
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    text-shadow: none;
+                }
+            }
+
+            i {
+                font-size: 22px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+
+            a {
+                color: white;
+                width: 100%;
+                height: 100%;
+                padding-top: 12px;
+                display: block;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                &:active, &.active {
+                    color: #ffeb3b;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    color: #ffeb3b;
+    background: #3e3e3e;
+}
+
+
+.menuBar {
+    // overflow-x: scroll;
+    // direction: ltr;
+    width: 80px !important;
+    // position: fixed;
+    top: 45px;
+    list-style: none;
+    text-align: center;
+    // z-index: 1030;
+    margin: 0;
+    background: transparent;
+    bottom: 0px;
+}
+
+
+// /* hidden scroll bar menu bar*/
+.menuBar::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background:#e86f56;
+    display: none !important;
+}
+
+.menuBar::-webkit-scrollbar-thumb {
+    background: transparent;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+    display: none !important;
+}
+
+.menuBar::-webkit-scrollbar-corner {
+    background: #000;
+    display: none !important;
+}
+
+
+// /* end hidden scroll bar menu bar*/

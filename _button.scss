@@ -1,0 +1,85 @@
+@import './base/_color.scss';
+@import './_font.scss';
+
+// ----------------------------default button--------------------------
+.btn {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: background-color .3s;
+    min-width: 94px;
+    height: 38px;
+
+    i {
+        font-size: 14px;
+        margin-right: 6px;
+        margin-left: 0px;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
+        filter: brightness(85%);
+
+    }
+
+    &:disabled{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
+        filter: brightness(100%);
+        cursor: not-allowed;
+    }
+
+    &-default{
+        border: 0 !important;
+        background-color: $white;
+        cursor: pointer;
+    }
+}
+
+// ----------------------------button size--------------------------
+
+.btn{
+    &-lg{
+        min-width: 220px !important
+    }
+    &-sm{
+        min-width: 100px !important;
+        max-height: 40px;
+    }
+    &-supersm{
+        min-width: 50px !important;
+        max-height: 35px;
+    }
+}
+
+// ----------------------------dropdown button--------------------------
+
+.dropdown-item{
+    &:hover {
+        filter: brightness(85%);
+        transition: background-color .3s;
+    }
+
+    &:disabled{
+        filter: brightness(100%);
+        cursor: not-allowed;
+    }
+
+    &:active {
+        filter: brightness(75%);
+        background-color: #f0f0f0;
+        outline: 0px !important;
+        color: $black;
+    }
+}
+
+.dropdown-divider{ //-->line to separate between option in popup<--
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.btn-toggle{
+    min-width: 36px !important;
+}

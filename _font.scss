@@ -1,0 +1,148 @@
+@import './base/_color.scss';
+
+$font-kanit:'Kanit-Regular';
+@font-face {
+    font-family: 'Kanit-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/th-TH/Kanit/Kanit-Regular.ttf') format('truetype');
+}
+
+$font-kanit-light:'Kanit-Light';
+@font-face {
+    font-family: 'Kanit-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/fonts/th-TH/Kanit/Kanit-Light.ttf') format('truetype');
+}
+
+$font-kanit-bold:'Kanit-Bold';
+@font-face {
+    font-family: 'Kanit-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/th-TH/Kanit/Kanit-Bold.ttf') format('truetype');
+}
+
+$size: 12px;
+$fonttype: (
+"ex-small",
+"small",
+"medium",
+"large");
+@each $item in $fonttype {
+    .font-#{$item} {
+        $index: index($fonttype, $item);
+        font-size: (-1 + $index) *2 + $size;
+    }
+}
+
+
+html {
+  @extend .font-small;
+}
+
+body {
+    font-size: 1em;
+    font-weight: 500 !important;
+    color: $black;
+    font-family: $font-kanit;
+}
+
+p,
+div,
+label,
+a,tbody {
+    font-family: $font-kanit;
+    @extend .font-small
+}
+
+th {
+    font-family: $font-kanit;
+}
+
+h1 {
+    font-family: $font-kanit;
+    font-size: 3.0rem;
+}
+
+h2 {
+    font-family: $font-kanit;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: $font-kanit;
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-family: $font-kanit;
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-family: $font-kanit;
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-family: $font-kanit;
+    font-size: 1.0rem;
+}
+
+.thin{
+    font-family: $font-kanit-light;
+}
+
+.bold{
+    font-family: $font-kanit-bold;
+}
+
+
+.font-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.text-{
+    &lighten{
+        filter: brightness(1.2);
+        -webkit-filter: brightness(1.2);
+        -moz-filter: brightness(1.2);
+        -o-filter: brightness(1.2);
+        -ms-filter: brightness(1.2);
+    }
+    &darken{
+        filter: brightness(0.9);
+        -webkit-filter: brightness(0.9);
+        -moz-filter: brightness(0.9);
+        -o-filter: brightness(0.9);
+        -ms-filter: brightness(0.9);
+    }
+}
+
+.text-white{
+    color: $white !important;
+}
+
+.text-smoke{
+    color: $smoke !important;
+}
+
+.text-green{
+    color: $green !important;
+}
+
+.text-red{
+    color: $red !important;
+}
+
+.text-orange{
+    color: $orange !important;
+}
+
+.text-blue{
+    color: $blue !important;
+}

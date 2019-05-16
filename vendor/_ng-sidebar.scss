@@ -1,0 +1,19 @@
+@import '../base/_color.scss';
+
+:host /deep/  .ng-sidebar {
+    background: $dark;
+    width: 200px;
+    z-index: 1050;
+    padding-top: 20px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+:host /deep/ .ng-sidebar-container {
+    background: $white;
+}
+:host /deep/ .ng-sidebar__content{
+    -webkit-overflow-scrolling : unset !important;
+}

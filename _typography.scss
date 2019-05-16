@@ -1,0 +1,91 @@
+@import './base/_color.scss';
+
+$font-kanit:'Kanit';
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/th-TH/Kanit/Kanit-Regular.ttf') format('truetype');
+}
+
+$size: 14px;
+$fonttype: ( "small",
+"medium",
+"large");
+@each $item in $fonttype {
+    .font-#{$item} {
+        $index: index($fonttype, $item);
+        font-size: (-1 + $index) *2 + $size;
+    }
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-size: 1em;
+    font-weight: 500 !important;
+    color: $black;
+    font-family: $font-kanit;
+}
+
+p,
+div,
+a,
+tbody {
+    font-family: $font-kanit;
+    font-size: 14px;
+}
+
+th {
+    font-family: $font-kanit;
+}
+
+h1 {
+    font-family: $font-kanit;
+    font-size: 3.0rem;
+}
+
+h2 {
+    font-family: $font-kanit;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: $font-kanit;
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-family: $font-kanit;
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-family: $font-kanit;
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-family: $font-kanit;
+    font-size: 1.0rem;
+}
+
+
+//icon awsome
+.fa {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right !important;
+}
